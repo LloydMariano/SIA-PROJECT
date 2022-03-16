@@ -1,0 +1,32 @@
+.container{
+    background-color: #B8DBD9;
+    margin-left: 0%;
+    width: 15%;
+    text-align: center;
+    height: 100vh;
+    margin-top: -8.7%;
+    position: fixed;
+    display: inline-block;
+
+}
+.logo1{
+    margin-top: 5%;
+    margin-bottom: 15%;
+}
+.container1{
+    margin-left: 15%;
+}
+.container2{
+    margin-left: 15%;
+    margin-top: -3%;
+}
+a:hover  {
+    background-color: rgb(153, 153, 153);
+  }
+a{
+    margin-right: 5px;
+    color: black;
+}
+.table{
+    text-align: center;
+}
