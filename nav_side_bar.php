@@ -26,82 +26,28 @@
         </div>
         <ul class="nav flex-column">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Product</a>
+              <a class="nav-link active" aria-current="page" href="index.php">Product</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Categories</a>
+              <a class="nav-link" href="categories.php">Categories</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Notifications</a>
+              <a class="nav-link" href="notfication.php">Notifications</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Help</a>
+                <a class="nav-link" href="help.php">Help</a>
               </li>
           </ul>
           <hr style="height:2px;border-width:0;color:gray;background-color:gray">
             <ul class="nav flex-column">
                 <li class="nav-item">
-                    <a class="nav-link" href="login.html">Logout</a>
+                    <a class="nav-link" href="login.php">Logout</a>
                   </li>
             </ul>
     </div>
 
-      <div class="container2">
-        <nav class="navbar navbar-light"  style="background-color: #eeeded;">
-            <h5 class="product">Products</h5>
-            <ul class="nav nav-pills mb-3 justify-content-end" id="pills-tab">
-                <li class="nav-item">
-                  <a class="nav-link bg-primary text-white" href="#">ADD</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link bg-success text-white" href="#">UPDATE</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link bg-danger text-white" href="#">DELETE</a>
-                </li>
-              </ul>
 
-          </nav>
-
-          <table class="table table-hover table-sm">
-            <thead>
-              <tr>
-                <th scope="col">Product Number</th>
-                <th scope="col">Product Name</th>
-                <th scope="col">Product Quantity</th>
-                <th scope="col">Product Brand</th>
-                <th scope="col">Category</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              
-            </tbody>
-          </table>
-    </div>
    
-    
-    
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
