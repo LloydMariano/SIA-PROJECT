@@ -4,44 +4,38 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="inventory.css">
+    <link rel="stylesheet" href="/SIA-PROJECT/css/inventory.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
     <title>Inventory Management System</title>
+
+    
   </head>
   <body>
-      <div class="container1 ">
-        <nav class="navbar navbar-light bg-light d-flex justify-content-end shadow-sm p-3 mb-5 bg-body rounded">
-            <form class="form-inline">
-              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
-          </nav>
-            
-      </div>
 
-      <div class="container ">
+
+      <div class="container">
         <div class="logo">
-            <img src="image/logo_amk.png" class="logo1" alt="AMK Logo" height="130" >
+           &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<img class="logo1" src="/SIA-PROJECT/image/logo_amk.png"  alt="AMK Logo" height="130">
         </div>
         <ul class="nav flex-column">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.php">Product</a>
+              <a class="nav-link active" aria-current="page" href="/SIA-PROJECT/index.php">Product &nbsp;&nbsp;<i class="fa fa-shopping-bag" aria-hidden="true"></i></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="categories.php">Categories</a>
+              <a class="nav-link" href="/SIA-PROJECT/categories.php">Categories &nbsp;<i class="fa fa-list-alt" aria-hidden="true"></i></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="notfication.php">Notifications</a>
+              <a class="nav-link" href="/SIA-PROJECT/notfication.php">Notifications &nbsp;<i class="fa fa-bell" aria-hidden="true"></i></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="help.php">Help</a>
+                <a class="nav-link" href="/SIA-PROJECT/help.php">Help &nbsp;&nbsp;<i class="fa fa-question-circle" aria-hidden="true"></i></a>
               </li>
           </ul>
           <hr style="height:2px;border-width:0;color:gray;background-color:gray">
             <ul class="nav flex-column">
                 <li class="nav-item">
-                    <a class="nav-link" href="login.php">Logout</a>
+                    <a class="nav-link" href="login.php">Logout &nbsp;&nbsp;<i class="fa fa-sign-out" aria-hidden="true"></i></a>
                   </li>
             </ul>
     </div>

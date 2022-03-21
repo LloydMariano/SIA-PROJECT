@@ -1,28 +1,39 @@
 <!doctype html>
 <html lang="en">
   <head>
-    
-    <?php include_once 'nav_side_bar.php'; ?> 
+  <?php require_once 'php/config.php' ?>
+
+    <?php include_once 'php/nav_side_bar.php'; ?> 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="inventory.css">
+    <link rel="stylesheet" href="css/inventory.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
     <title>Inventory Management System</title>
 
+
     <div class="container2">
         <nav class="navbar navbar-light"  style="background-color: #eeeded;">
             <h5 class="product">Products</h5>
-            <ul class="nav nav-pills mb-3 justify-content-end" id="pills-tab">
-                <li class="nav-add">
-                  <a class="nav-link bg-primary text-white" href="#">ADD</a>
-                </li>
-              </ul>
 
           </nav>
         
     </div>
+    <div class="container1 ">
+        <nav class="navbar navbar-light bg-light d-flex justify-content-end shadow-sm p-3 mb-5 bg-body rounded">
+            <form class="form-inline">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <ul class="nav nav-pills mb-3 justify-content-end" id="pills-tab">
+                <li class="nav-add">
+                  <a class="nav-link bg-primary text-white" href="add_prod.php">ADD</a>
+                </li>
+              </ul>
+          </nav>
+            
+      </div>
   </head>
   <body>
  
@@ -37,21 +48,36 @@
                 <th scope="col">Action</th>
               </tr>
             </thead>
+
+<?php 
+$sql = "SELECT * from  product_tbl ";
+$query = $dbh -> prepare($sql);
+$query->execute();
+$results=$query->fetchAll(PDO::FETCH_OBJ);
+$cnt=1;
+if($query->rowCount() > 0)
+{
+foreach($results as $result)
+{
+
+?>
+
             <tbody>
               <tr>
-                <th scope="row">0922222222</th>
-                <td>taho</td>
-                <td>1000</td>
-                <td>balot</td>
-                <td>pandesal</td>
+                <td scope="row"><?php echo htmlentities($result->prod_num); ?></td>
+                <td><?php echo htmlentities($result->prod_name); ?></td>
+                <td><?php echo htmlentities($result->prod_qty); ?></td>
+                <td><?php echo htmlentities($result->prod_brand); ?></td>
+                <td><?php echo htmlentities($result->prod_categ); ?></td>
                 <td> 
-                  <button class="btn btn-success"> <i class='fas fa-edit'></i> </button> 
-                  <button class="btn btn-danger"> <i class='fas fa-trash'></i> </button>
+                <a class="up_btn" href="php/update_prod.php?id=<?php echo htmlentities($result->prod_id); ?>"> <button class="btn btn-success" >  <i class='fas fa-edit'></i> </button> </a>
+                <a class="dwn_btn"href="php/delcon_prod.php?id=<?php echo htmlentities($result->prod_id); ?>"> <button class="btn btn-danger"> <i class='fas fa-trash'></i> </button>  </a>
               </td>
               </tr>
 
               
             </tbody>
+            <?php $cnt=$cnt+1; }} ?>
           </table>
     </div>
    
