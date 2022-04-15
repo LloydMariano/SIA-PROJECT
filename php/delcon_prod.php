@@ -12,10 +12,10 @@ if(isset($_GET['id'])){
   echo 'if ( res == true) { ';
     echo '  window.location.replace("deleteperm.php?id='.$prod_id.'") ';
     echo ' } else { ';
-    echo '  window.location.replace("/SIA-PROJECT/index.php") }';
+    echo '  window.location.replace("/SIA-PROJECT/home.php") }';
     echo '</script>';
 }else{
-  header("Location: /SIA-PROJECT/index.php"); 
+  header("Location: /SIA-PROJECT/home.php"); 
     }
 
 

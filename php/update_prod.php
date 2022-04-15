@@ -25,7 +25,7 @@ $query->bindParam('uid',$prod_id, PDO::PARAM_STR);
 $query->execute();
 echo "<script>alert('Record Updated successfully');</script>";
 // Code for redirection
-echo "<script>window.location.href='/SIA-PROJECT/index.php'</script>";
+echo "<script>window.location.href='/SIA-PROJECT/home.php'</script>";
 }
 
 ?>

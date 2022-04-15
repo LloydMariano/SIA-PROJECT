@@ -83,8 +83,10 @@ h3{
 .up_btn{
     position: absolute;
     margin-left: -4%;
+    margin-top: -.4%;
 }
 .dwn_btn{
     position: absolute;
     padding-left: -10%;
+    margin-top: -.4%;   
 }

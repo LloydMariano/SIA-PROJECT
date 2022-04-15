@@ -10,10 +10,10 @@ $prod_id = $_SESSION['prod_id'];
     $stmt = $dbh->prepare($sql);
     $stmt->execute([$prod_id]);
     echo '<script type="text/javascript">';
-    echo '  window.location.replace("/SIA-PROJECT/index.php")';
+    echo '  window.location.replace("/SIA-PROJECT/home.php")';
     echo '</script>';
 }else{
-    header("Location: /SIA-PROJECT/index.php"); 
+    header("Location: /SIA-PROJECT/home.php"); 
 
   
       }

@@ -20,7 +20,7 @@
         </div>
         <ul class="nav flex-column">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/SIA-PROJECT/index.php">Product &nbsp;&nbsp;<i class="fa fa-shopping-bag" aria-hidden="true"></i></a>
+              <a class="nav-link active" aria-current="page" href="/SIA-PROJECT/home.php">Product &nbsp;&nbsp;<i class="fa fa-shopping-bag" aria-hidden="true"></i></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/SIA-PROJECT/categories.php">Categories &nbsp;<i class="fa fa-list-alt" aria-hidden="true"></i></a>
@@ -35,7 +35,7 @@
           <hr style="height:2px;border-width:0;color:gray;background-color:gray">
             <ul class="nav flex-column">
                 <li class="nav-item">
-                    <a class="nav-link" href="login.php">Logout &nbsp;&nbsp;<i class="fa fa-sign-out" aria-hidden="true"></i></a>
+                    <a class="nav-link" href="index.php">Logout &nbsp;&nbsp;<i class="fa fa-sign-out" aria-hidden="true"></i></a>
                   </li>
             </ul>
     </div>

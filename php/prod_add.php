@@ -21,7 +21,7 @@ $dbh->exec($query);
 }
 $_SESSION['message']=array("text"=>"User successfully created.","alert"=>"info");
 $conn = null;
-header('location: /SIA-PROJECT/index.php');
+header('location: /SIA-PROJECT/home.php');
 }
 
 ?>
